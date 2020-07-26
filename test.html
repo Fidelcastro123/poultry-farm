@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: 'Lato', sans-serif;
+        }
+        
+        .overlay {
+          height: 100%;
+          width: 0;
+          position:fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);
+          overflow-x: hidden;
+          transition: 0.5s;
+        }
+        
+        .overlay-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        .overlay a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .overlay a:hover, .overlay a:focus {
+          color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .overlay a {font-size: 20px}
+          .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="test.html">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#services">SERVICES</a>
+          </div>
+        </div>
+        <p></p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav() " >&#9776; MENU</span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+                  
+        
+<div class="banner-area" id="home">
+    <div class="container">
+    <div class="outer">
+        <div class="details">
+        <h2>FIDCA poultry farm</h2>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="about-area" id="about">
+    <div class="text-part">
+    <h1 class="logtext">ABOUT US</h1>
+    <P>
+    Agri-tech poultry firm was started in the year 2020. The firm deals in many 
+    products but currently the main product is kienyeji poultry which has high nutritious
+    value and is healthy for consumption since it is organic and natural.The firm also sells
+    eggs both fertilized for hatching and normal egg for consumption.chicks of different ages
+    and mature chicken is also available. we do care for what you consume and its future 
+    effect thats why we provide organic products.
+    </P>
+    </div>
+</div>
+<div class="product-area" id="products">
+    <div class="text-part">
+<section id="team">
+    <div class="contaner">
+    <h1 class="h1">Our products</h1>
+    <div class="row">
+        <div class="col-md-4 profile-pic text-center">
+        <div class="img-box">
+            <img src="images/chicks.jpg" width="250px" height="200" class="img-responsive">
+        </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-4 profile-pic text-center">
+    <div class="img-box">
+        <img src="images/eggs.jpg" width="250px" height="200" class="img-responsive">
+    </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 profile-pic text-center">
+    <div class="img-box">
+    <img src="images/cock.jpg" width="250px" height="200" class="img-responsive">
+    </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 profile-pic text-center">
+    <div class="img-box">
+    <img src="images/chickegg.webp" width="250px" height="200" class="img-responsive">
+    </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="service-area" id="services">
+    <div class="text-part">
+    <h1>OUR SERVICES</h1>
+    <P>
+        Agri-tech poultry firm was started in the year 2020. The firm deals in many 
+        products but currently the main product is kienyeji poultry which has high nutritious
+        value and is healthy for consumption since it is organic and natural.The firm also sells
+        eggs both fertilized for hatching and normal egg for consumption.chicks of different ages
+        and mature chicken is also available. we do care for what you consume and its future 
+        effect thats why we provide organic products.
+    </P>
+</div>
+</div>
+<div class="contact-area" id="contacts">
+    <h1 class="logtext">Contacts</h1>
+    <div class="footer">
+        <div class="footer-content">
+        <div class="footer-section about">
+            <h1 class="logo-text"><span>ABOUT US</h1>
+            <span style="color:white;"> Agri-tech company provides incredibly healthy organic products
+            to everyone willing to consume natural product free of chemicals.</span> 
+            <div class="Contacts">
+            <span><i class="fa fa-phone"></i></i>&nbsp; 0700662440</span>
+            </div>
+            <div class="socials">
+            <a href="https://www.facebook.com/groups/327325401333221/"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://chat.whatsapp.com/IRYyfj2bDbd2704Nfyi4pj"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section quik links">
+        <h2>Quick link</h2>
+            <br>
+            <ul>
+            <a href="#">
+                <li>programms</li>
+            </a>
+            <a href="https://www.google.com/maps/@-1.3126242,36.7217889,13z">
+                <li> location</li>
+            </a>
+            <a href="#">
+                <li>services</li>
+            </a>
+            <a href="#">
+                <li>products</li>
+            </a>
+            <a href="#">
+                <li>training</li>
+            </a>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">
+            <h2>contact us</h2>
+            <br>
+            <form action="mailto:fidelcastro7546@gmail.com" target="https://mail.google.com/mail/u/0/#inbox" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="your email address... ">
+            <textarea name="message" class="text-input contact-input" placeholder="your message"></textarea>
+            <button type="submit" class="btn">
+                <span style="color: #007bff;">send</span>
+            </button>
+            </form>
+        </div>
+        </div>
+        <!-------bottom----->
+        <div class="footer-bottom">
+        &copy;agri-tech.com | Developed & Designed By Fidel castro
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
